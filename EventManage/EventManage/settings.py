@@ -159,12 +159,8 @@ LOGIN_URL = '/login/'
 # Ensure proper datetime format handling
 USE_L10N = False
 # Add these to your settings.py
-import socket
-
-hostname = socket.gethostname()
-local_ip = socket.gethostbyname(hostname)
-
-FLASK_API_URL = f'http://{local_ip}:5000/api'
-FLASK_API_TOKEN = 'abcdefghi'  # Must match Flask's JWT_SECRET_KEY
-FLASK_MEDIA_URL = f'http://{local_ip}:5000/uploads'
+# Flask API deployed URL
+FLASK_API_URL = 'https://krishkakar.pythonanywhere.com/api'
+FLASK_API_TOKEN = 'abcdefghi'  # Must match Flask's JWT_SECRET_KEY or remove if not used
+FLASK_MEDIA_URL = 'https://krishkakar.pythonanywhere.com/uploads'
 

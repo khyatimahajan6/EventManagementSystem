@@ -36,7 +36,7 @@ API_URL = settings.FLASK_API_URL
 
 import json
 
-API_URL = 'http://localhost:5000/api/events'
+API_URL = 'https://krishkakar.pythonanywhere.com/api/events'
 TOKEN = 'abcdefghi'  # Must match Flask API token
 HEADERS = {'Authorization': f'Bearer {TOKEN}'}
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView
